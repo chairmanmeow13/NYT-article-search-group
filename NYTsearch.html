@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYT Article Search - Andrew, Ahmed, David, Loren</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="NYTsearch.css">
+</head>
+<body>
+<div class="jumbotron">
+  <h1 align="center">New York Times Article Search
+	<span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+  </h1>
+</div>
+
+<div class="row-lg-8">
+<div class="panel panel-default" id="searchField">
+<div class="panel-heading">
+<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+Search Parameters</div>
+<div class="panel-body">
+	<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Search Term:</label>
+	    <input type="text" class="form-control" id="searchTerm">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Number of Records to Retrieve:</label>
+	    <input type="text" class="form-control" id="numberRecords">
+	  </div>
+		<div class="form-group">
+		<label for="exampleInputPassword1">Start Year (Optional):</label>
+		<input type="text" class="form-control" id="startYear">
+		</div>
+	 <div class="form-group">
+	    <label for="exampleInputPassword1">End Year (Optional):</label>
+	    <input type="text" class="form-control" id="endYear">
+	 </div>
+
+	  <button type="submit" id="submit" class="btn btn-default">Submit</button>
+	  <button type="submit" id="clear" class="btn btn-default">Clear Results</button>
+	</form>
+</div>
+</div>
+</div>
+<br><br>
+
+<div class="row-lg-8">
+<div id="searchResults" class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+	Top Articles</div>
+	<div class="panel-body">
+	Panel content
+	</div>
+</div>
+</div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript">
+ 	var APIKey = "92f4762ee77c441c8d5eac36dd57de2e";
+
+$(document).ready(function() {
+  $("#submit").click(function() {
+  
+  });
+
+  $("#clear").click(function(){
+
+  });
+});
+</script>
+</body>
+</html>
